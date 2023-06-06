@@ -96,7 +96,7 @@ export default function Home() {
               href="https://github.com/damiangreen/damian-green-portfolio"
               className="hover:underline decoration-dotted"
             >
-              here
+              here.
             </Link>
           </p>
           <p className="mb-6">
@@ -139,9 +139,6 @@ export default function Home() {
           style={{ backgroundImage: `url("/woods.jpeg")`, height: "10vh" }}
         ></header>
       </main>
-      {/**https://github.com/damiangreen */}
-      {/**https://www.linkedin.com/in/damian-green-1686288/ */}
-      {/** https://stackoverflow.com/users/1801403/damian-green */}
       <footer className="text-gray-600 body-font">
         <div className="bg-gray-100">
           <div className="container px-5 py-6 mx-auto flex items-center flex-row ">
