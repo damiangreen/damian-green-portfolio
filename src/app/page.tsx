@@ -4,6 +4,7 @@ import GoogleDoc from "./GoogleDoc";
 import StackOverflow from "./StackOverflow";
 import Image from "next/image";
 import instagram from "./instagram.png";
+import { LinkedIn } from "./LinkedIn";
 
 export default function Home() {
   return (
@@ -18,7 +19,7 @@ export default function Home() {
               Damian Green
             </h2>
             <p className="mb-1 text-slate-900">
-              Software Developer | Father | Oil Painter
+              Software Developer | Father | Painter
             </p>
           </div>
         </header>
@@ -51,27 +52,35 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <div className="flex leading-relaxed flex-column">
+          <div className="flex leading-relaxed flex-column mb-8">
             <div>
               I give back to the developer community by helping to answer
               questions on StackOverflow. My profile is found here.
             </div>
-            <div>
+            <div className="m-2">
               <Link href="https://stackoverflow.com/users/1801403/damian-green">
-                <div className="bg-white px-2">
+                <div className="bg-white px-2 m-2">
                   <StackOverflow />
                 </div>
+              </Link>
+            </div>
+          </div>
+          <div className="flex leading-relaxed flex-column gap-2">
+            <div className="flex-auto">My LinkedIn profile can be found</div>
+            <div className="flex-1 flex p-2">
+              <Link href="https://www.linkedin.com/in/damian-green-1686288/">
+                <LinkedIn />
               </Link>
             </div>
           </div>
         </div>
         <header
           className="flex items-center justify-center h-screen bg-fixed bg-center bg-cover "
-          style={{ backgroundImage: `url("/gnome.png")` }}
+          style={{ backgroundImage: `url("/gnome.png")`, height: "20vh" }}
         ></header>
         <div className="max-w-lg m-auto py-8">
           <h2 className="mb-4 text-2xl">This site</h2>
-          <p className="mb-8">
+          <p className="mb-6">
             This site was built in part to learn NextJS /{" "}
             <Link
               href="https://tailwindcss.com/"
@@ -81,7 +90,7 @@ export default function Home() {
             </Link>{" "}
             / Vercel and partly as a web presence.{" "}
           </p>
-          <p className="mb-8">
+          <p className="mb-6">
             The repository for this site can be found{" "}
             <Link
               href="https://github.com/damiangreen/damian-green-portfolio"
@@ -90,7 +99,7 @@ export default function Home() {
               here
             </Link>
           </p>
-          <p className="mb-8">
+          <p className="mb-6">
             Background images were generated with{" "}
             <Link
               href="https://clipdrop.co/stable-diffusion"
@@ -110,9 +119,9 @@ export default function Home() {
           <div className="flex">
             <div>
               <p className="mb-8">
-                When I'm not working or coding I like to paint. I've been
-                painting with water-based oils for a few years now and I'm still
-                learning.
+                When I'm not working or parenting I like to paint. I've been
+                painting with water-based oils for a few years now and I
+                continue to learn.
               </p>
             </div>
             <div className="p-1">
@@ -161,21 +170,7 @@ export default function Home() {
                 className="ml-3 text-gray-500"
                 href="https://www.linkedin.com/in/damian-green-1686288/"
               >
-                <svg
-                  fill="currentColor"
-                  stroke="currentColor"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="0"
-                  className="w-5 h-5"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    stroke="none"
-                    d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"
-                  ></path>
-                  <circle cx="4" cy="4" r="2" stroke="none"></circle>
-                </svg>
+                <LinkedIn />
               </a>
             </span>
           </div>
