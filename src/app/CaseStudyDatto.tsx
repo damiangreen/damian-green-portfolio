@@ -5,12 +5,13 @@ import Link from "next/link";
 import topology from "./datto/topology.png";
 
 const CaseStudyDatto = () => (
-  <div className="m-auto py-8 px-8">
+  <div className="m-auto py-32 px-8">
     <h2 className="text-4xl text-center mb-10 tracking-tight datto-title font-bold">
-      Case Study <span className="pipe">|</span> Datto
+      Case Study <span className="pipe font-normal">|</span>{" "}
+      <span className="font-normal">Datto</span>
     </h2>
     <div className="flex mb-8 leading-relaxed max-w-screen-lg m-auto flex-wrap gap-4 ">
-      <div className="flex-1 max-w-lg basis-60">
+      <div className="flex-1 max-w-lg basis-96">
         <p className="mb-6">
           Datto reached out with a requirement to rebuild their flagship RMM
           product.
@@ -36,7 +37,7 @@ const CaseStudyDatto = () => (
           the type safety and refactorability of Typescript.
         </p>
       </div>
-      <div className="flex-1 basis-60">
+      <div className="flex-1 basis-96">
         <Image src={rmmDashboard} alt="rmm dashboard" className="w-full" />
       </div>
     </div>
@@ -44,13 +45,13 @@ const CaseStudyDatto = () => (
       Network Discovery
     </h2>
     <div className="flex mb-8 leading-relaxed max-w-screen-lg m-auto flex-wrap gap-8 flex-column">
-      <div className="flex-1 basis-60">
+      <div className="flex-1 basis-96">
         <Image src={topology} alt="rmm dashboard" className="w-full" />
       </div>
-      <div className="flex-1 basis-60">
+      <div className="flex-1 basis-96">
         <p className="mb-6">
           Another notable feature that we built out was a network discovery
-          feature. This allowed customers to see a topology of their network
+          feature. This allows customers to see a topology of their network
           through an SNMP scan from the RMM Network Node agent. Device types /
           operating systems are visually represented and user-configured device
           alerts are easily identifiable. The Topology can be drilled into and
