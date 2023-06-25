@@ -11,19 +11,15 @@ const ThisSite = () => (
       >
         Tailwind
       </Link>{" "}
-      / Vercel and partly as a web presence.{" "}
-    </p>
-    <p className="mb-6">
-      The repository for this site can be found{" "}
+      / Vercel and partly as a web presence. The repository for this site can be
+      found{" "}
       <Link
         href="https://github.com/damiangreen/damian-green-portfolio"
         className="hover:underline decoration-dotted"
       >
         here.
-      </Link>
-    </p>
-    <p className="mb-6">
-      Background images were generated with{" "}
+      </Link>{" "}
+      Background images generated with{" "}
       <Link
         href="https://clipdrop.co/stable-diffusion"
         className="hover:underline decoration-dotted"
@@ -31,7 +27,6 @@ const ThisSite = () => (
         Stable Diffusion.
       </Link>
     </p>
-    <p>This site is ongoing. More to come.</p>
   </div>
 );
 

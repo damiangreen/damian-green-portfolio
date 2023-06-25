@@ -1,6 +1,6 @@
 const Header = () => (
   <header
-    className="flex items-center justify-center h-screen bg-fixed bg-center bg-cover"
+    className="flex items-center justify-center h-80 bg-fixed bg-center bg-cover"
     style={{ backgroundImage: `url("/woods.jpeg")` }}
   >
     <div className="p-5 text-black bg-white bg-opacity-50">

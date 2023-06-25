@@ -4,27 +4,25 @@ import ThisSite from "./ThisSite";
 import { Footer } from "./Footer";
 import Painting from "./Painting";
 import Header from "./Header";
+import CaseStudyDatto from "./CaseStudyDatto";
+import WoodsCover from "./WoodsCover";
 
 export default function Home() {
   return (
     <>
       <main>
         <Header />
+        <CaseStudyDatto />
+        <WoodsCover />
         <AboutMe />
         <header
           className="flex items-center justify-center h-screen bg-fixed bg-center bg-cover "
           style={{ backgroundImage: `url("/gnome.png")`, height: "20vh" }}
         ></header>
         <ThisSite />
-        <header
-          className="flex items-center justify-center bg-fixed bg-center bg-cover"
-          style={{ backgroundImage: `url("/woods.jpeg")`, height: "10vh" }}
-        ></header>
+        <WoodsCover />
         <Painting />
-        <header
-          className="flex items-center justify-center bg-fixed bg-center bg-cover"
-          style={{ backgroundImage: `url("/woods.jpeg")`, height: "10vh" }}
-        ></header>
+        <WoodsCover />
       </main>
       <Footer />
     </>

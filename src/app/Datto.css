@@ -1,0 +1,7 @@
+:root {
+  --datto-dark: 0, 42, 58;
+}
+
+.datto-title {
+  color: rgb(var(--datto-dark));
+}
