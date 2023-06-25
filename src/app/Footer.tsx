@@ -1,6 +1,6 @@
 import LinkedIn from "./LinkedIn";
 
-export const Footer = () => (
+const Footer = () => (
   <footer className="text-gray-600 body-font">
     <div className="bg-gray-100">
       <div className="container px-5 py-6 mx-auto flex items-center flex-row ">
@@ -36,3 +36,5 @@ export const Footer = () => (
     </div>
   </footer>
 );
+
+export default Footer;

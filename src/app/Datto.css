@@ -5,3 +5,7 @@
 .datto-title {
   color: rgb(var(--datto-dark));
 }
+
+.pipe {
+  color: grey;
+}

@@ -3,7 +3,7 @@ import Image from "next/image";
 import instagram from "./instagram.png";
 
 const Painting = () => (
-  <div className="max-w-lg m-auto py-8">
+  <div className="max-w-lg m-auto py-8 px-2">
     <h2 className="mb-4 text-2xl">Painting</h2>
     <div className="flex">
       <div>

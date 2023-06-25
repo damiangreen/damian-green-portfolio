@@ -2,14 +2,15 @@ import Image from "next/image";
 import "./Datto.css";
 import rmmDashboard from "./datto/rmm-dashboard.png";
 import Link from "next/link";
+import topology from "./datto/topology.png";
 
 const CaseStudyDatto = () => (
-  <div className="m-auto py-8">
+  <div className="m-auto py-8 px-8">
     <h2 className="text-4xl text-center mb-10 tracking-tight datto-title font-bold">
-      Case Study | Datto
+      Case Study <span className="pipe">|</span> Datto
     </h2>
-    <div className="flex mb-8 leading-relaxed max-w-screen-lg m-auto flex-wrap">
-      <div className="flex-1">
+    <div className="flex mb-8 leading-relaxed max-w-screen-lg m-auto flex-wrap gap-4 ">
+      <div className="flex-1 max-w-lg basis-60">
         <p className="mb-6">
           Datto reached out with a requirement to rebuild their flagship RMM
           product.
@@ -34,18 +35,40 @@ const CaseStudyDatto = () => (
           cloud based tech, leveraging the power and simplicity of GraphQL and
           the type safety and refactorability of Typescript.
         </p>
-        <p>
-          More information can be found here{" "}
-          <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
-            <Link href="https://rmm.datto.com/help/en/Content/3NEWUI/NEWUI.htm">
-              Datto RMM
-            </Link>
-          </button>
-        </p>
       </div>
-      <div className="flex-1">
+      <div className="flex-1 basis-60">
         <Image src={rmmDashboard} alt="rmm dashboard" className="w-full" />
       </div>
+    </div>
+    <h2 className="text-4xl text-center mb-10 tracking-tight datto-title">
+      Network Discovery
+    </h2>
+    <div className="flex mb-8 leading-relaxed max-w-screen-lg m-auto flex-wrap gap-8 flex-column">
+      <div className="flex-1 basis-60">
+        <Image src={topology} alt="rmm dashboard" className="w-full" />
+      </div>
+      <div className="flex-1 basis-60">
+        <p className="mb-6">
+          Another notable feature that we built out was a network discovery
+          feature. This allowed customers to see a topology of their network
+          through an SNMP scan from the RMM Network Node agent. Device types /
+          operating systems are visually represented and user-configured device
+          alerts are easily identifiable. The Topology can be drilled into and
+          collapsed to investigate certain regions of the network. There were
+          interesting challenges to be tackled here with regard to how best to
+          represent this data visually in a performant manner.
+        </p>
+      </div>
+    </div>
+    <div className="m-auto max-w-screen-lg">
+      <p>
+        More information can be found here{" "}
+        <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+          <Link href="https://rmm.datto.com/help/en/Content/3NEWUI/NEWUI.htm">
+            Datto RMM
+          </Link>
+        </button>
+      </p>
     </div>
   </div>
 );

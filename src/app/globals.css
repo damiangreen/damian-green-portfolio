@@ -16,3 +16,6 @@ body {
   color: rgb(var(--foreground-rgb));
   background: white;
 }
+a {
+  text-decoration: underline;
+}
