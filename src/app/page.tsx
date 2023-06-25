@@ -4,7 +4,9 @@ import GoogleDoc from "./GoogleDoc";
 import StackOverflow from "./StackOverflow";
 import Image from "next/image";
 import instagram from "./instagram.png";
-import { LinkedIn } from "./LinkedIn";
+import  LinkedIn  from "./LinkedIn";
+
+const cvUrl ='https://tinyurl.com/damian-green'
 
 export default function Home() {
   return (
@@ -19,7 +21,7 @@ export default function Home() {
               Damian Green
             </h2>
             <p className="mb-1 text-slate-900">
-              Software Developer | Father | Painter
+              Software Developer
             </p>
           </div>
         </header>
@@ -40,12 +42,12 @@ export default function Home() {
               </p>
               <p className="mb-6">
                 If you're hiring my CV can be downloaded{" "}
-                <Link href="https://shorturl.at/jwCX3">here.</Link>
+                <Link href={cvUrl}>here.</Link>
               </p>
             </div>
             <div className="flex-1 flex">
               <div className="m-auto animate-pulse hover:animate-off flex flex-col">
-                <Link href="https://shorturl.at/jwCX3">
+                <Link href={cvUrl}>
                   <GoogleDoc />
                 </Link>
                 <div className="text-center">CV</div>
