@@ -1,5 +1,4 @@
 import Link from "next/link";
-import GoogleDoc from "./GoogleDoc";
 import LinkedIn from "./LinkedIn";
 import StackOverflow from "./StackOverflow";
 /* eslint-disable react/no-unescaped-entities */
@@ -14,25 +13,14 @@ const AboutMe = () => (
       <div>
         <p className="mb-6">
           I've been coding since the Amiga 68K Assembler days and it has been my
-          passion ever since.
-        </p>
-        <p className="mb-6">
-          Recently, I've been coding mostly with Typescript and ReactJS, with a
-          long history of full-stack development using C# and .Net. I strive to
-          keep up-to-date with technology.
+          passion ever since. Recently, I've been coding mostly with Typescript
+          and ReactJS, with a long history of full-stack development using C#
+          and .Net. I strive to keep up-to-date with technology.
         </p>
         <p className="mb-6">
           If you're hiring my CV can be downloaded{" "}
           <Link href={cvUrl}>here.</Link>
         </p>
-      </div>
-      <div className="flex-1 flex">
-        <div className="m-auto animate-pulse hover:animate-off flex flex-col">
-          <Link href={cvUrl}>
-            <GoogleDoc />
-          </Link>
-          <div className="text-center">CV</div>
-        </div>
       </div>
     </div>
     <div className="flex leading-relaxed flex-column mb-8">

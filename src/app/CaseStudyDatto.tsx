@@ -1,7 +1,7 @@
 import Image from "next/image";
 import "./Datto.css";
-/* eslint-disable react/no-unescaped-entities */
 import rmmDashboard from "./datto/rmm-dashboard.png";
+import Link from "next/link";
 
 const CaseStudyDatto = () => (
   <div className="m-auto py-8">
@@ -31,7 +31,16 @@ const CaseStudyDatto = () => (
           status, and more. Customer feedback was positive and we were able to
           iterate quickly in response to feedback. On the back of this success
           we continued to work to build out their entire product using latest
-          cloud based tech leveraging the power and simplicity of GraphQL.
+          cloud based tech, leveraging the power and simplicity of GraphQL and
+          the type safety and refactorability of Typescript.
+        </p>
+        <p>
+          More information can be found here{" "}
+          <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+            <Link href="https://rmm.datto.com/help/en/Content/3NEWUI/NEWUI.htm">
+              Datto RMM
+            </Link>
+          </button>
         </p>
       </div>
       <div className="flex-1">
