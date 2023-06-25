@@ -54,22 +54,23 @@ const CaseStudyDatto = () => (
           feature. This allows customers to see a topology of their network
           through an SNMP scan from the RMM Network Node agent. Device types /
           operating systems are visually represented and user-configured device
-          alerts are easily identifiable. The Topology can be drilled into and
+          alerts are easily identifiable. The topology can be drilled into and
           collapsed to investigate certain regions of the network. There were
           interesting challenges to be tackled here with regard to how best to
           represent this data visually in a performant manner.
         </p>
       </div>
     </div>
-    <div className="m-auto max-w-screen-lg">
-      <p>
-        More information can be found here{" "}
-        <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
-          <Link href="https://rmm.datto.com/help/en/Content/3NEWUI/NEWUI.htm">
-            Datto RMM
-          </Link>
-        </button>
-      </p>
+    <div className="m-auto max-w-screen-lg text-center">
+      More information can be found here{" "}
+      <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+        <Link
+          href="https://rmm.datto.com/help/en/Content/3NEWUI/NEWUI.htm"
+          className="no-underline"
+        >
+          Datto RMM
+        </Link>
+      </button>
     </div>
   </div>
 );
