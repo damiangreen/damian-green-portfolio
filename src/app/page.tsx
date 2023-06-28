@@ -6,6 +6,7 @@ import Painting from "./Painting";
 import Header from "./Header";
 import CaseStudyDatto from "./CaseStudyDatto";
 import WoodsCover from "./WoodsCover";
+import Clients from "./Clients";
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
         <Header />
         <CaseStudyDatto />
         <WoodsCover />
+        <Clients />
         <AboutMe />
         <Painting />
         <header

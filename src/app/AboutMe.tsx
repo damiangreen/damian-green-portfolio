@@ -1,5 +1,4 @@
 import Link from "next/link";
-import StackOverflow from "./StackOverflow";
 const cvUrl = "https://tinyurl.com/damian-green";
 
 const AboutMe = () => (
