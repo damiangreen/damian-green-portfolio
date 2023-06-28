@@ -1,7 +1,7 @@
 import Link from "next/link";
 
 const ThisSite = () => (
-  <div className="max-w-lg m-auto py-8 px-2">
+  <div className="max-w-3xl m-auto py-8 px-2">
     <h2 className="mb-4 text-2xl">This site</h2>
     <p className="mb-6">
       This site was built in part to learn NextJS /{" "}

@@ -2,7 +2,7 @@ import Link from "next/link";
 const cvUrl = "https://tinyurl.com/damian-green";
 
 const AboutMe = () => (
-  <div className="max-w-screen-lg m-auto py-8 px-8">
+  <div className="max-w-3xl m-auto py-8 px-8">
     <h2 className="text-4xl text-center uppercase mb-10 font-mono tracking-wide">
       About Me
     </h2>
@@ -33,6 +33,18 @@ const AboutMe = () => (
           className="p-0 m-0"
         >
           here{" "}
+        </Link>
+      </div>
+    </div>
+    <div className="flex">
+      <div>
+        When I'm not working or parenting I like to paint. I've been painting
+        with water-based oils for a few years now and I continue to learn.{" "}
+        <Link
+          href="https://www.instagram.com/damian.green.art"
+          className="p-0 m-0"
+        >
+          See my Instagram
         </Link>
       </div>
     </div>
