@@ -14,13 +14,13 @@ export default function Home() {
         <CaseStudyDatto />
         <WoodsCover />
         <Clients />
+        <WoodsCover />
         <AboutMe />
         <header
           className="flex items-center justify-center h-screen bg-fixed bg-center bg-cover "
           style={{ backgroundImage: `url("/gnome.png")`, height: "20vh" }}
         ></header>
         <ThisSite />
-        <WoodsCover />
       </main>
       <Footer />
     </>
