@@ -1,5 +1,8 @@
-import Link from "next/link";
+import FancyLink from "@/FancyLink";
 const cvUrl = "https://tinyurl.com/damian-green";
+const soUrl = "https://stackoverflow.com/users/1801403/damian-green";
+const linkedInUrl = "https://www.linkedin.com/in/damian-green-1686288/";
+const instagramUrl = "https://www.instagram.com/damian.green.art";
 
 const AboutMe = () => (
   <div className="max-w-3xl m-auto py-8 px-8">
@@ -13,7 +16,8 @@ const AboutMe = () => (
           and it has been my passion ever since. Recently, I've been coding
           mostly with Typescript and ReactJS, with a long history of full-stack
           development using C# and .Net. I strive to keep up-to-date with
-          technology. My CV can be found <Link href={cvUrl}>here.</Link>
+          technology. My CV can be found{" "}
+          <FancyLink href={cvUrl}>here.</FancyLink>
         </p>
       </div>
     </div>
@@ -21,31 +25,22 @@ const AboutMe = () => (
       <div>
         I give back to the developer community by helping to answer questions on
         StackOverflow. My StackOverflow profile is{" "}
-        <Link
-          href="https://stackoverflow.com/users/1801403/damian-green"
-          className="bg-white p-0 m-0 inline-block"
-        >
+        <FancyLink href={soUrl} target="_blank">
           here
-        </Link>
+        </FancyLink>
         . My LinkedIn profile can be found{" "}
-        <Link
-          href="https://www.linkedin.com/in/damian-green-1686288/"
-          className="p-0 m-0"
-        >
+        <FancyLink href={linkedInUrl} target="_blank">
           here{" "}
-        </Link>
+        </FancyLink>
       </div>
     </div>
     <div className="flex">
       <div>
         When I'm not working or parenting I like to paint. I've been painting
         with water-based oils for a few years now and I continue to learn.{" "}
-        <Link
-          href="https://www.instagram.com/damian.green.art"
-          className="p-0 m-0"
-        >
+        <FancyLink href={instagramUrl} target="_blank">
           See my Instagram
-        </Link>
+        </FancyLink>
       </div>
     </div>
   </div>
