@@ -6,7 +6,7 @@ import umgLogo from "./images/Universal-Music-Group.png";
 import jatoLogo from "./images/jato-logo.png";
 import metiaLogo from "./images/metialogo.svg";
 import Image from "next/image";
-import globalGigLogo from "./images/globalgig-logo.svg";
+import globalGigLogo from "./images/globalGig-logo.svg";
 import cannesLionsLogo from "./images/cannes_lions_logo_3703.gif";
 import tescoLogo from "./images/tesco-logo.png";
 import regusLogo from "./images/regus-logo.png";
