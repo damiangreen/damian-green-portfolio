@@ -62,10 +62,11 @@ const CaseStudyDatto = () => (
       </div>
     </div>
     <div className="m-auto max-w-screen-lg text-center">
-      More information can be found here{" "}
+      More information on the RMM product can be found here{" "}
       <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
         <Link
           href="https://rmm.datto.com/help/en/Content/3NEWUI/NEWUI.htm"
+          target="_blank"
           className="no-underline"
         >
           Datto RMM

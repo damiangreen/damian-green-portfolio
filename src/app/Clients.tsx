@@ -12,7 +12,9 @@ import tescoLogo from "./images/tesco-logo.png";
 import regusLogo from "./images/regus-logo.png";
 import totalObjectsLogo from "./images/total-objects.jpeg";
 
-const flexClass = "flex flex-1 basis-48 justify-center items-center mx-8 my-8";
+const flexClass =
+  "flex flex-1 basis-48 justify-center items-center mx-8 my-8 max-h-16";
+const imgClass = "grayscale hover:grayscale-0 ";
 
 const Clients = () => (
   <div className="max-w-screen-xl m-auto py-16 px-8">
@@ -33,7 +35,7 @@ const Clients = () => (
           src={electroRentLogo}
           alt="datto"
           height={100}
-          className="grayscale hover:grayscale-0"
+          className={imgClass}
         />
       </div>
       <div className={flexClass}>
@@ -41,7 +43,7 @@ const Clients = () => (
           src={pokerStarsLogo}
           alt="poker-stars"
           height={100}
-          className="grayscale hover:grayscale-0"
+          className={imgClass}
         />
       </div>
       <div className={flexClass}>
@@ -49,24 +51,14 @@ const Clients = () => (
           src={telefonicaLogo}
           alt="telefonica"
           height={100}
-          className="grayscale hover:grayscale-0"
+          className={imgClass}
         />
       </div>
       <div className={flexClass}>
-        <Image
-          src={umgLogo}
-          alt="umg"
-          height={100}
-          className="grayscale hover:grayscale-0"
-        />
+        <Image src={umgLogo} alt="umg" height={100} className={imgClass} />
       </div>
       <div className={flexClass}>
-        <Image
-          src={jatoLogo}
-          alt="jato"
-          height={100}
-          className="grayscale hover:grayscale-0"
-        />
+        <Image src={jatoLogo} alt="jato" height={100} className={imgClass} />
       </div>
       <div className={flexClass}>
         <Image
@@ -81,7 +73,7 @@ const Clients = () => (
           src={globalGigLogo}
           alt="globalGig"
           height={100}
-          className="grayscale hover:grayscale-0"
+          className={imgClass}
         />
       </div>{" "}
       <div className={flexClass}>
@@ -89,31 +81,21 @@ const Clients = () => (
           src={cannesLionsLogo}
           alt="cannesLions"
           height={100}
-          className="grayscale hover:grayscale-0"
+          className={imgClass}
         />
       </div>
       <div className={flexClass}>
-        <Image
-          src={tescoLogo}
-          alt="tesco"
-          height={100}
-          className="grayscale hover:grayscale-0"
-        />
+        <Image src={tescoLogo} alt="tesco" height={100} className={imgClass} />
       </div>
       <div className={flexClass}>
-        <Image
-          src={regusLogo}
-          alt="regus"
-          height={100}
-          className="grayscale hover:grayscale-0"
-        />
+        <Image src={regusLogo} alt="regus" height={100} className={imgClass} />
       </div>
       <div className={flexClass}>
         <Image
           src={totalObjectsLogo}
           alt="total Objects"
           height={100}
-          className="grayscale hover:grayscale-0"
+          className={imgClass}
         />
       </div>
     </div>
